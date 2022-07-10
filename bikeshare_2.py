@@ -6,12 +6,10 @@ CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york.csv',
              'washington': 'washington.csv'}
 
-
 def get_filters():
      return city, month, day
 
     #Asks user to specify a city, month, and day to analyze.
-
     #Returns:
        # #(str) city - name of the city to analyze
         #(str) month - name of the month to filter by, or "all" to apply no month filter
@@ -96,7 +94,6 @@ df = df.loc[df['month'] == month, :]
 if day != 'all':
 # filter by day of week to create the new dataframe
  df = df.loc[df['day_of_week'] == day, :]
-
 
 
 def time_stats(df):
@@ -190,7 +187,6 @@ print("The most common birth year is: {}".format(
 
 print("This took %s seconds." % (time.time() - start_time))
 print('-' * 40)
-
 
 
 def main():
